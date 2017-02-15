@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:resmio/rollico.git",
   "author": "developers@resmio.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "normalize.css": "^5.0.0"
+  }
 }
