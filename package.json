@@ -1,12 +1,25 @@
 {
-  "name": "rollico",
+  "name": "@resmio/rollico",
   "version": "0.0.1",
   "description": "A base style builder for resmio projects",
   "main": "index.js",
-  "repository": "git@github.com:resmio/rollico.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/resmio/rollico.git"
+  },
   "author": "developers@resmio.com",
   "license": "MIT",
   "devDependencies": {
     "normalize.css": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/resmio/rollico/issues"
+  },
+  "homepage": "https://github.com/resmio/rollico#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
