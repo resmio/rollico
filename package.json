@@ -1,0 +1,9 @@
+{
+  "name": "rollico",
+  "version": "0.0.1",
+  "description": "A base style builder for resmio projects",
+  "main": "index.js",
+  "repository": "git@github.com:resmio/rollico.git",
+  "author": "developers@resmio.com",
+  "license": "MIT"
+}
