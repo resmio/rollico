@@ -4,46 +4,52 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: none;
           appearance: none;
-  background-color: #00A7C4;
+  background-color: #22CCAA;
   border: 0;
-  border-radius: $base-border-radius;
+  border-radius: 6px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: 14px 38px;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: background-color $base-duration $base-timing;
-  transition: background-color $base-duration $base-timing;
+  -webkit-transition: background-color 150ms ease;
+  transition: background-color 150ms ease;
   -webkit-user-select: none;
           user-select: none;
   vertical-align: middle;
-  white-space: nowrap;
+  white-space: nowrap
+}
 
-  &:hover,
-  &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
-  }
+button:hover,
+  button:focus,
+  input[type="button"]:hover,
+  input[type="button"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+  background-color: rgb(0, 134, 157);
+  color: #FFFFFF
+}
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5
+}
 
-    &:hover {
-      background-color: $action-color;
-    }
-  }
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #00A7C4
 }
 
 body {
   background: #00A7C4;
-  fontSize: 1em;
+  fontSize: 16px;
 }
 
 /*

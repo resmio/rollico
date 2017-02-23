@@ -3,29 +3,29 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   appearance: none;
-  background-color: var(--pacificBlue);
+  background-color: var(--java);
   border: 0;
-  border-radius: $base-border-radius;
+  border-radius: var(--baseBorderRadius);
   color: var(--white);
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontSize);
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: var(--defaultButtonPadding);
   text-align: center;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
+  transition: background-color var(--baseDuration) var(--baseTiming);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+    background-color: color(var(--actionColor) shade(20%));
+    color: var(--white);
   }
 
   &:disabled {
@@ -33,7 +33,7 @@ input[type="submit"] {
     opacity: 0.5;
 
     &:hover {
-      background-color: $action-color;
+      background-color: var(--actionColor);
     }
   }
 }
