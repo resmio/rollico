@@ -10,6 +10,7 @@
   "author": "developers@resmio.com",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.7.5",
     "normalize.css": "^5.0.0",
     "postcss-import": "^9.1.0"
   },
