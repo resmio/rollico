@@ -1,9 +1,52 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: #00A7C4;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color $base-duration $base-timing;
+  transition: background-color $base-duration $base-timing;
+  -webkit-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
+
 body {
   background: #00A7C4;
   fontSize: 1em;
 }
 
-/*@import "modules/buttons";
+/*
 @import "modules/forms";
 @import "modules/layout";
 @import "modules/lists";

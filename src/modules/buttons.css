@@ -1,9 +1,12 @@
-#{$all-buttons} {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   appearance: none;
-  background-color: $action-color;
+  background-color: var(--pacificBlue);
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
