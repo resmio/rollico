@@ -1,5 +1,12 @@
 body {
-  background: peru;
+  background: #00A7C4;
+  fontSize: 1em;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7Q0FDbEIiLCJmaWxlIjoidGVzdC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgYmFja2dyb3VuZDogcGVydTtcbn1cbiJdfQ== */
+/*@import "modules/buttons";
+@import "modules/forms";
+@import "modules/layout";
+@import "modules/lists";
+@import "modules/media";
+@import "modules/tables";
+@import "modules/typography";*/

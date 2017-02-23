@@ -12,6 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.5",
     "normalize.css": "^5.0.0",
+    "postcss-custom-properties": "^5.0.2",
     "postcss-import": "^9.1.0"
   },
   "peerDependencies": {
@@ -22,7 +23,7 @@
   },
   "homepage": "https://github.com/resmio/rollico#readme",
   "scripts": {
-    "build": "postcss src/index.css",
+    "build": "postcss src/index.css -o build/test.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
