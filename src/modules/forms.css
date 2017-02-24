@@ -1,40 +1,56 @@
 fieldset {
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
+  background-color: var(--secondaryBackgroundColor);
+  border: var(--baseBorder);
+  margin: 0 0 var(--smallSpacing);
+  padding: var(--baseSpacing);
 }
 
 legend {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: calc(var(--smallSpacing) / 2);
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: calc(var(--smallSpacing) / 2);
 }
 
 input,
 select,
 textarea {
   display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontFamily);
 }
 
-#{$all-text-inputs} {
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+select[multiple=multiple],
+textarea {
   appearance: none;
-  background-color: $base-background-color;
-  border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
+  background-color: var(--baseBackgroundColor);
+  border: var(--baseBorder);
+  border-radius: var(--baseBorderRadius);
+  box-shadow: var(--formBoxShadow);
   box-sizing: border-box;
-  margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
-  transition: border-color $base-duration $base-timing;
+  margin-bottom: var(--smallSpacing);
+  padding: calc(var(--baseSpacing) / 3);
+  transition: border-color var(--baseDuration) var(--baseTiming);
   width: 100%;
 
   &:hover {

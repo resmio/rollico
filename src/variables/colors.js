@@ -1,6 +1,6 @@
 var colors = {
   // blues
- pacificBlue: '#00A7C4',
+ pacificBlue: 'red',
  deepCerulean: '#018EA6',
  oxfordBlue: '#333B4F',
  ebonyClay: '#293140',
