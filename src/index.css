@@ -1,14 +1,9 @@
 @import "modules/buttons";
 @import "modules/forms";
 
-body {
-  background: var(--pacificBlue);
-  fontSize: var(--baseFontSize);
-}
-
 /*
 @import "modules/layout";
 @import "modules/lists";
 @import "modules/media";
-@import "modules/tables";
-@import "modules/typography";*/
+@import "modules/tables";*/
+@import "modules/typography";

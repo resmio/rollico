@@ -1,7 +1,10 @@
 fieldset {
   background-color: var(--secondaryBackgroundColor);
   border: var(--baseBorder);
-  margin: 0 0 var(--smallSpacing);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: var(--smallSpacing);
+  margin-right: var(--smallSpacing);
   padding: var(--baseSpacing);
 }
 
@@ -54,26 +57,26 @@ textarea {
   width: 100%;
 
   &:hover {
-    border-color: shade($base-border-color, 20%);
+    border-color: color(var(--baseBorderColor) shade(20%));
   }
 
   &:focus {
-    border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
+    border-color: var(--actionColor);
+    box-shadow: var(--formBoxShadowFocus);
     outline: none;
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
+    background-color: color(var(--baseBackgroundColor), shade(5%));
     cursor: not-allowed;
 
     &:hover {
-      border: $base-border;
+      border: var(--baseBorder);
     }
   }
 
   &::placeholder {
-    color: tint($base-font-color, 40%);
+    color: color(var(--baseFontColor), tint(40%));
   }
 }
 
@@ -84,15 +87,15 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  margin-right: calc(var(--smallSpacing) / 2);
 }
 
 [type="file"] {
-  margin-bottom: $small-spacing;
+  margin-bottom: var(--smallSpacing);
   width: 100%;
 }
 
 select {
-  margin-bottom: $small-spacing;
+  margin-bottom: var(--smallSpacing);
   width: 100%;
 }
