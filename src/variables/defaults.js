@@ -7,7 +7,7 @@ var defaults = {
   actionColorDarker: colors.easternBlue,
   hiperlinkColor: colors.oceanBlue,
   // sizes
-  baseBorderRadius: '6px',
+  baseBorderRadius: '4px',
   // typography
   baseFontSize: '16px',
   baseFontFamily: '"Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif',
