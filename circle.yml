@@ -3,8 +3,6 @@ machine:
     version: 7.4.0
 
 dependencies:
-  pre:
-    - npm install yarn -g
   override:
     - yarn
   cache_directories:
