@@ -67,7 +67,7 @@ textarea {
   }
 
   &:disabled {
-    background-color: color(var(--baseBackgroundColor), shade(5%));
+    background-color: color(var(--baseBackgroundColor) shade(20%));
     cursor: not-allowed;
 
     &:hover {
@@ -76,7 +76,7 @@ textarea {
   }
 
   &::placeholder {
-    color: color(var(--baseFontColor), tint(40%));
+    color: color(var(--baseFontColor) tint(40%));
   }
 }
 
