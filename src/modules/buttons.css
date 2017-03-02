@@ -1,0 +1,39 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  appearance: none;
+  background-color: var(--java);
+  border: 0;
+  border-radius: var(--baseBorderRadius);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontSize);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: var(--defaultButtonPadding);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--baseDuration) var(--baseTiming);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: color(var(--actionColor) shade(20%));
+    color: var(--white);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: var(--actionColor);
+    }
+  }
+}

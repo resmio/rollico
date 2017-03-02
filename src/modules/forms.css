@@ -1,0 +1,101 @@
+fieldset {
+  background-color: var(--secondaryBackgroundColor);
+  border: var(--baseBorder);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: var(--smallSpacing);
+  margin-right: var(--smallSpacing);
+  padding: var(--baseSpacing);
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: calc(var(--smallSpacing) / 2);
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: calc(var(--smallSpacing) / 2);
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontFamily);
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+select[multiple=multiple],
+textarea {
+  appearance: none;
+  background-color: var(--baseBackgroundColor);
+  border: var(--baseBorder);
+  border-radius: var(--baseBorderRadius);
+  box-shadow: var(--formBoxShadow);
+  box-sizing: border-box;
+  margin-bottom: var(--smallSpacing);
+  padding: calc(var(--baseSpacing) / 3);
+  transition: border-color var(--baseDuration) var(--baseTiming);
+  width: 100%;
+
+  &:hover {
+    border-color: color(var(--baseBorderColor) shade(20%));
+  }
+
+  &:focus {
+    border-color: var(--actionColor);
+    box-shadow: var(--formBoxShadowFocus);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: color(var(--baseBackgroundColor) shade(20%));
+    cursor: not-allowed;
+
+    &:hover {
+      border: var(--baseBorder);
+    }
+  }
+
+  &::placeholder {
+    color: color(var(--baseFontColor) tint(40%));
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: calc(var(--smallSpacing) / 2);
+}
+
+[type="file"] {
+  margin-bottom: var(--smallSpacing);
+  width: 100%;
+}
+
+select {
+  margin-bottom: var(--smallSpacing);
+  width: 100%;
+}

@@ -1,0 +1,52 @@
+body {
+  color: var(--baseFontColor);
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headingFontFamily);
+  font-size: var(--headingFontSize);
+  font-weight: var(--headingFontWeight);
+  line-height: var(--headingLineHeight);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: var(--smallSpacing);
+  margin-right: var(--smallSpacing);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: var(--smallSpacing);
+  margin-right: var(--smallSpacing);
+}
+
+a {
+  color: var(--actionColor);
+  text-decoration: none;
+  transition: color var(--baseDuration) var(--baseTiming);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: color(var(--actionColor) shade(25%));
+  }
+}
+
+hr {
+  border-bottom: var(--baseBorder);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: var(--baseSpacing);
+  margin-bottom: var(--baseSpacing);
+}

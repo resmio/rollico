@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  margin: var(--smallSpacing) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid color( var(--baseBorderColor) shade(25%));
+  font-weight: 600;
+  padding: var(--smallSpacing) 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: var(--baseBorder);
+  padding: var(--smallSpacing) 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}

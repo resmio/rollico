@@ -10,16 +10,24 @@
   "author": "developers@resmio.com",
   "license": "MIT",
   "devDependencies": {
-    "normalize.css": "^5.0.0"
+    "autoprefixer": "^6.7.5",
+    "normalize.css": "^5.0.0",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^3.0.0",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-import": "^9.1.0",
+    "postcss-nesting": "^2.3.1"
+  },
+  "peerDependencies": {
+    "postcss-cli": "^3.0.0-beta"
   },
   "bugs": {
     "url": "https://github.com/resmio/rollico/issues"
   },
   "homepage": "https://github.com/resmio/rollico#readme",
-  "dependencies": {
-    "normalize.css": "^5.0.0"
-  },
   "scripts": {
+    "build": "postcss src/index.css -o build/rollico.css && yarn run copyVariables",
+    "copyVariables": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.js\" \\) -exec cp {} ./build/ \\;",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
