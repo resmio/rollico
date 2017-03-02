@@ -13,6 +13,7 @@ h5,
 h6 {
   font-family: var(--headingFontFamily);
   font-size: var(--headingFontSize);
+  font-weight: var(--headingFontWeight);
   line-height: var(--headingLineHeight);
   margin-top: 0;
   margin-bottom: 0;
