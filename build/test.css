@@ -136,11 +136,63 @@ select {
   margin-bottom: 10px;
   width: 100%;
 }
-/*
-@import "modules/layout";
-@import "modules/lists";
-@import "modules/media";
-@import "modules/tables";*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+dl {
+  margin: 0;
+}
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+dd {
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  table-layout: fixed;
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid rgb(166, 166, 166);
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: left;
+}
+td {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 10px 0;
+}
+tr,
+td,
+th {
+  vertical-align: middle;
+}
 body {
   color: #555555;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
