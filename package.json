@@ -11,6 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.5",
+    "cssnano": "^3.10.0",
     "normalize.css": "^5.0.0",
     "postcss-calc": "^5.3.1",
     "postcss-color-function": "^3.0.0",
