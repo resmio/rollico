@@ -18,3 +18,5 @@ wich css attributes we need to override locally in a component.
 I'm just putting manually build files there to see if it works, but later we
 want to make this compile rollico.css from several files and auto extract the
 variable values into variables.js
+
+https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines
