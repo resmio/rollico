@@ -11,7 +11,9 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.5",
+    "commitizen": "^2.9.6",
     "cssnano": "^3.10.0",
+    "cz-conventional-changelog": "^2.0.0",
     "normalize.css": "^5.0.0",
     "postcss-calc": "^5.3.1",
     "postcss-cli": "^3.0.0-beta",
@@ -27,8 +29,12 @@
   "homepage": "https://github.com/resmio/rollico#readme",
   "scripts": {
     "build": "postcss src/index.css -o build/rollico.css && yarn run copyVariables",
+    "commit": "git-cz",
     "copyVariables": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.js\" \\) -exec cp {} ./build/ \\;",
     "test": "npm help",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
