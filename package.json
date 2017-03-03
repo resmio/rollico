@@ -1,24 +1,28 @@
 {
   "name": "@resmio/rollico",
-  "version": "0.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "A base style builder for resmio projects",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/resmio/rollico.git"
+    "url": "https://github.com/resmio/rollico.git"
   },
   "author": "developers@resmio.com",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.5",
+    "commitizen": "^2.9.6",
+    "condition-circle": "^1.5.0",
     "cssnano": "^3.10.0",
+    "cz-conventional-changelog": "^2.0.0",
     "normalize.css": "^5.0.0",
     "postcss-calc": "^5.3.1",
     "postcss-cli": "^3.0.0-beta",
     "postcss-color-function": "^3.0.0",
     "postcss-custom-properties": "^5.0.2",
     "postcss-import": "^9.1.0",
-    "postcss-nesting": "^2.3.1"
+    "postcss-nesting": "^2.3.1",
+    "semantic-release": "^6.3.2"
   },
   "bugs": {
     "url": "https://github.com/resmio/rollico/issues"
@@ -26,7 +30,15 @@
   "homepage": "https://github.com/resmio/rollico#readme",
   "scripts": {
     "build": "postcss src/index.css -o build/rollico.css && yarn run copyVariables",
+    "commit": "git-cz",
     "copyVariables": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.js\" \\) -exec cp {} ./build/ \\;",
-    "test": "npm help"
+    "test": "npm help",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   }
 }
