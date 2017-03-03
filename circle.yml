@@ -12,4 +12,4 @@ test:
   override:
     - yarn test
   post:
-    - yarn run semantic-release
+    - yarn run semantic-release || true

@@ -12,6 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.5",
     "commitizen": "^2.9.6",
+    "condition-circle": "^1.5.0",
     "cssnano": "^3.10.0",
     "cz-conventional-changelog": "^2.0.0",
     "normalize.css": "^5.0.0",
@@ -36,5 +37,8 @@
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   }
 }
