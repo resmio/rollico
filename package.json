@@ -2,7 +2,7 @@
   "name": "@resmio/rollico",
   "version": "0.0.0-semantically-released",
   "description": "A base style builder for resmio projects",
-  "main": "index.js",
+  "main": "build/rollico.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/resmio/rollico.git"
@@ -29,9 +29,10 @@
   },
   "homepage": "https://github.com/resmio/rollico#readme",
   "scripts": {
-    "build": "postcss src/index.css -o build/rollico.css && yarn run copyVariables",
+    "build": "yarn run build:css && yarn run build:js",
+    "build:css": "postcss src/index.css -o build/rollico.css",
+    "build:js": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.js\" \\) -exec cp {} ./build/ \\;",
     "commit": "git-cz",
-    "copyVariables": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.js\" \\) -exec cp {} ./build/ \\;",
     "test": "npm help",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
