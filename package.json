@@ -22,6 +22,7 @@
     "postcss-custom-properties": "^5.0.2",
     "postcss-import": "^9.1.0",
     "postcss-nesting": "^2.3.1",
+    "rimraf": "^2.6.1",
     "semantic-release": "^6.3.2"
   },
   "bugs": {
@@ -29,9 +30,9 @@
   },
   "homepage": "https://github.com/resmio/rollico#readme",
   "scripts": {
-    "build": "yarn run build:css && yarn run build:js",
-    "build:css": "postcss src/index.css -o build/rollico.css",
-    "build:js": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.js\" \\) -exec cp {} ./build/ \\;",
+    "build": "rimraf dist && yarn run build:css && yarn run build:js",
+    "build:css": "postcss src/index.css -o dist/rollico.css",
+    "build:js": "find ./src/variables -type f \\( -iname \"*\" ! -iname \"index.postcss.js\" \\) -exec cp {} ./dist/ \\;",
     "commit": "git-cz",
     "test": "npm help",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
