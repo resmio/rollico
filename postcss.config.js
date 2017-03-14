@@ -5,7 +5,7 @@ module.exports = {
     // ⚠️ order matters!!!
     require('postcss-import')({root: 'src'}),
     require('postcss-nesting')({}),
-    require('postcss-custom-properties')({variables: require('./src/variables')}),
+    require('postcss-custom-properties')({variables: require('./src/variables/index.postcss.js')}),
     require('postcss-calc')({}),
     require('postcss-color-function')({}),
     require('autoprefixer')({browsers: '> 5%'}),
