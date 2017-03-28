@@ -9,8 +9,8 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
+  color: var(--headingFontColor);
   font-family: var(--headingFontFamily);
   font-size: var(--headingFontSize);
   font-weight: var(--headingFontWeight);
@@ -21,6 +21,23 @@ h6 {
   margin-right: var(--smallSpacing);
 }
 
+h2{
+  font-size: calc(var(--headingFontSize)/1.4);
+}
+
+h3{
+  font-size: calc(var(--headingFontSize)/1.55);
+}
+
+h4{
+  font-size: calc(var(--headingFontSize)/2);
+}
+
+h5{
+  font-size: calc(var(--headingFontSize)/2.3);
+}
+
+
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -29,14 +46,14 @@ p {
 }
 
 a {
-  color: var(--actionColor);
-  text-decoration: none;
+  color: var(--headingFontColor);
+  text-decoration: underline;
   transition: color var(--baseDuration) var(--baseTiming);
 
   &:active,
   &:focus,
   &:hover {
-    color: color(var(--actionColor) shade(25%));
+    color: color(var(--actionColor));
   }
 }
 

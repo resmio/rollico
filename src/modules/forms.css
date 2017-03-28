@@ -9,24 +9,15 @@ fieldset {
 }
 
 legend {
-  font-weight: 600;
   margin-bottom: calc(var(--smallSpacing) / 2);
   padding: 0;
 }
 
 label {
   display: block;
-  font-weight: 600;
   margin-bottom: calc(var(--smallSpacing) / 2);
 }
 
-input,
-select,
-textarea {
-  display: block;
-  font-family: var(--baseFontFamily);
-  font-size: var(--baseFontFamily);
-}
 
 input[type="color"],
 input[type="date"],
@@ -49,10 +40,9 @@ textarea {
   background-color: var(--baseBackgroundColor);
   border: var(--baseBorder);
   border-radius: var(--baseBorderRadius);
-  box-shadow: var(--formBoxShadow);
   box-sizing: border-box;
   margin-bottom: var(--smallSpacing);
-  padding: calc(var(--baseSpacing) / 3);
+  padding: calc(var(--baseSpacing));
   transition: border-color var(--baseDuration) var(--baseTiming);
   width: 100%;
 
@@ -81,7 +71,12 @@ textarea {
 }
 
 textarea {
+  display: block;
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontFamily);
+  padding: var(--baseSpacing);
   resize: vertical;
+
 }
 
 [type="checkbox"],

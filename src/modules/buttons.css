@@ -3,7 +3,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   appearance: none;
-  background-color: var(--java);
+  background-color: var(--blueBayoux);
   border: 0;
   border-radius: var(--baseBorderRadius);
   color: var(--white);
@@ -24,7 +24,7 @@ input[type="submit"] {
 
   &:hover,
   &:focus {
-    background-color: color(var(--actionColor) shade(20%));
+    background-color: color(var(--Fiord));
     color: var(--white);
   }
 
