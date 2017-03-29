@@ -63,7 +63,7 @@ textarea {
   }
 
   &:focus {
-    border-color: var(--actionColor);
+    border-color: var(--actionColorLighter);
     box-shadow: var(--formBoxShadowFocus);
     outline: none;
   }

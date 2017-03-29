@@ -10,7 +10,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--headingFontColor);
+  color: var(--headingColor);
   font-family: var(--headingFontFamily);
   font-size: var(--headingFontSize);
   font-weight: var(--headingFontWeight);
@@ -53,7 +53,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: color(var(--actionColor));
+    color: color(var(--hiperlinkColorlighter));
   }
 }
 

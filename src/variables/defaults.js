@@ -6,11 +6,13 @@ var defaults = (function(){
     var formBoxShadow = 'inset 0 1px 3px ' + colors.gallery
     return {
       // colors
-      actionColor: colors.pacificBlue,
-      actionColorDarker: colors.easternBlue,
+      actionColorLighter: colors.pacificBlue,
+      actionColor: colors.blueBayoux,
+      actionColorDarker: colors.fiord,
       baseFontColor: colors.emperor,
       headingColor: colors.blueBayoux,
       hiperlinkColor: colors.blueBayoux,
+      hiperlinkColorlighter: colors.pacificBlue,
       // borders
       baseBorderColor: baseBorderColor,
       baseBorder: '1px solid ' + baseBorderColor,
