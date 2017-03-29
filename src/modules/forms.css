@@ -9,24 +9,23 @@ fieldset {
 }
 
 legend {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: calc(var(--smallSpacing) / 2);
   padding: 0;
 }
 
 label {
   display: block;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: calc(var(--smallSpacing) / 2);
 }
-
 input,
 select,
 textarea {
   display: block;
   font-family: var(--baseFontFamily);
   font-size: var(--baseFontFamily);
-}
+ }
 
 input[type="color"],
 input[type="date"],
@@ -49,10 +48,13 @@ textarea {
   background-color: var(--baseBackgroundColor);
   border: var(--baseBorder);
   border-radius: var(--baseBorderRadius);
-  box-shadow: var(--formBoxShadow);
+  box-shadow: none;
   box-sizing: border-box;
+  display: block;
+  font-family: var(--baseFontFamily);
+  font-size: var(--baseFontFamily);
   margin-bottom: var(--smallSpacing);
-  padding: calc(var(--baseSpacing) / 3);
+  padding: calc(var(--baseSpacing));
   transition: border-color var(--baseDuration) var(--baseTiming);
   width: 100%;
 
@@ -61,7 +63,7 @@ textarea {
   }
 
   &:focus {
-    border-color: var(--actionColor);
+    border-color: var(--actionColorLighter);
     box-shadow: var(--formBoxShadowFocus);
     outline: none;
   }
@@ -81,7 +83,9 @@ textarea {
 }
 
 textarea {
+  padding: var(--baseSpacing);
   resize: vertical;
+
 }
 
 [type="checkbox"],
@@ -94,6 +98,7 @@ textarea {
   margin-bottom: var(--smallSpacing);
   width: 100%;
 }
+
 
 select {
   margin-bottom: var(--smallSpacing);
