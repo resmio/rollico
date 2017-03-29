@@ -46,7 +46,7 @@ p {
 }
 
 a {
-  color: var(--headingFontColor);
+  color: var(--hiperlinkColor);
   text-decoration: underline;
   transition: color var(--baseDuration) var(--baseTiming);
 

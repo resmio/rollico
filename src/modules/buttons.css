@@ -24,7 +24,7 @@ input[type="submit"] {
 
   &:hover,
   &:focus {
-    background-color: color(var(--Fiord));
+    background-color: color(var(--fiord));
     color: var(--white);
   }
 

@@ -9,7 +9,7 @@ var colors = {
  ebonyClay: '#293140',
  midnightExpress: '#1E2532',
  blueBayoux:'#556285',
- Fiord:'#3E4862',
+ fiord:'#3E4862',
  // greens
  java: '#22CCAA',
  mountainMeadow: '#21B498',

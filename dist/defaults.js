@@ -9,8 +9,8 @@ var defaults = (function(){
       actionColor: colors.pacificBlue,
       actionColorDarker: colors.easternBlue,
       baseFontColor: colors.emperor,
-      headingFontColor: colors.blueBayoux,
-      hiperlinkColor: colors.oceanBlue,
+      headingColor: colors.blueBayoux,
+      hiperlinkColor: colors.blueBayoux,
       // borders
       baseBorderColor: baseBorderColor,
       baseBorder: '1px solid ' + baseBorderColor,
