@@ -47,13 +47,18 @@ p {
 
 a {
   color: var(--hiperlinkColor);
-  text-decoration: underline;
+  border-bottom: 0.1em solid var(--hiperlinkColor);
+  display: inline-block;
+  line-height: 1.1;
+  text-decoration: none;
   transition: color var(--baseDuration) var(--baseTiming);
 
   &:active,
   &:focus,
   &:hover {
     color: color(var(--hiperlinkColorlighter));
+    border-bottom: 0.1em solid var(--hiperlinkColorlighter);
+
   }
 }
 
