@@ -19,4 +19,5 @@ I'm just putting manually build files there to see if it works, but later we
 want to make this compile rollico.css from several files and auto extract the
 variable values into variables.js
 
+-TO DO: Add note about `npm install -g commitizen`
 https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines
