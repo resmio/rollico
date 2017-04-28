@@ -7,6 +7,31 @@
     <meta name="description" content="Scaffold styles, variables and structure for Bourbon projects.">
     <title>Rollico - Example</title>
     <link rel="stylesheet" href="dist/rollico.css">
+    <style>
+      .color-patches {
+        background: red;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: space-around;
+      }
+      .color-patch {
+        border: 1px solid #DDD;
+        background: white;
+        padding: .5em;
+        flex: 1 1 50px;
+      }
+      .patch {
+        width: 100%;
+        height: 5em;
+      }
+
+      .color-name,
+      .color-value {
+        text-align: left;
+        padding-left: 0
+      }
+
+    </style>
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -29,6 +54,148 @@
       </p>
 
       <hr>
+      <section>
+        <h2>Color Names</h2>
+        <div class="color-patches">
+          <div class="color-patch">
+            <div class="patch" style="background-color:#00A7C4;"></div>
+            <p class="color-name">pacificBlue</p>
+            <p class="color-value">#00A7C4</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#B9F2FA;"></div>
+            <p class="color-name">charlotte</p>
+            <p class="color-value">#B9F2FA</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#018EA6;"></div>
+            <p class="color-name">deepCerulean</p>
+            <p class="color-value">#018EA6</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#333B4F;"></div>
+            <p class="color-name">oxfordBlue</p>
+            <p class="color-value">#333B4F</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#293140;"></div>
+            <p class="color-name">ebonyClay</p>
+            <p class="color-value">#293140</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#1E2532;"></div>
+            <p class="color-name">midnightExpress</p>
+            <p class="color-value">#1E2532</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#556285;"></div>
+            <p class="color-name">blueBayoux</p>
+            <p class="color-value">#556285</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#3E4862;"></div>
+            <p class="color-name">fiord</p>
+            <p class="color-value">#3E4862</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#22CCAA;"></div>
+            <p class="color-name">java</p>
+            <p class="color-value">#22CCAA</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#21B498;"></div>
+            <p class="color-name">mountainMeadow</p>
+            <p class="color-value">#21B498</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#543EAC;"></div>
+            <p class="color-name">royalPurple</p>
+            <p class="color-value">#543EAC</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#FCE9ED;"></div>
+            <p class="color-name">wispPink</p>
+            <p class="color-value">#FCE9ED</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#E62C4F;"></div>
+            <p class="color-name">amaranth</p>
+            <p class="color-value">#E62C4F</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#BC213F;"></div>
+            <p class="color-name">maroonFlush</p>
+            <p class="color-value">#BC213F</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#F8C150;"></div>
+            <p class="color-name">goldenTainoi</p>
+            <p class="color-value">#F8C150</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#D7A43B;"></div>
+            <p class="color-name">metallicGold</p>
+            <p class="color-value">#D7A43B</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#FF910A;"></div>
+            <p class="color-name">darkOrange</p>
+            <p class="color-value">#FF910A</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#D97B08;"></div>
+            <p class="color-name">mangoTango</p>
+            <p class="color-value">#D97B08</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#000000;"></div>
+            <p class="color-name">black</p>
+            <p class="color-value">#000000</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#222222;"></div>
+            <p class="color-name">mineShaft</p>
+            <p class="color-value">#222222</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#555555;"></div>
+            <p class="color-name">emperor</p>
+            <p class="color-value">#555555</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#999999;"></div>
+            <p class="color-name">dustyGray</p>
+            <p class="color-value">#999999</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#CCCCCC;"></div>
+            <p class="color-name">silver</p>
+            <p class="color-value">#CCCCCC</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#DDDDDD;"></div>
+            <p class="color-name">alto</p>
+            <p class="color-value">#DDDDDD</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#EEEEEE;"></div>
+            <p class="color-name">gallery</p>
+            <p class="color-value">#EEEEEE</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#F7F7F7;"></div>
+            <p class="color-name">whiteSand</p>
+            <p class="color-value">#F7F7F7</p>
+          </div>
+          <div class="color-patch">
+            <div class="patch" style="background-color:#FFFFFF;"></div>
+            <p class="color-name">white</p>
+            <p class="color-value">#FFFFFF</p>
+          </div>
+        </div>
+      </section>
+
+      </hr>
 
       <h2>Headings</h2>
       <h1>h1. Heading</h1>
@@ -171,7 +338,6 @@
       </tr>
     </table>
     </section>
-
     <footer>
       <p>Rollico is maintained by <a href="//resmio.com">resmio</a>.</p>
     </footer>
