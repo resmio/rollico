@@ -1,8 +1,9 @@
 {
   "name": "@resmio/rollico",
   "version": "0.0.0-semantically-released",
-  "description": "A base style builder for resmio projects",
-  "main": "build/rollico.css",
+  "description": "A basic style guide for resmio projects",
+  "main": "dist/rollico.css",
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "https://github.com/resmio/rollico.git"
@@ -37,8 +38,10 @@
     "test": "npm help",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "release": {
     "verifyConditions": "condition-circle"
