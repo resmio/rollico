@@ -1,9 +1,9 @@
 # rollico
 Rollico mission is to define a set of base styles on top of [normalizer](https://github.com/necolas/normalize.css)
 to set default styles for project(s). It allows you to create opinionated
-defaults, saving you from redefining those on every project. This comes
-particularly handy when creating react components, since you can import this
-styles and only define the rules that override this ones inside the component.
+defaults, saving you from redefining those on every project. This becomes
+particularly handy when creating react components, since you can import these
+styles and only define the rules that override these ones inside the component.
 Later you can import rollico in the app you will be using the components and
 it will give you the same defaults.
 
